@@ -1,0 +1,160 @@
+body {
+  background-color: black;
+  color: whitesmoke;
+  height: 100%;
+
+}
+
+.first-x {
+
+  position: absolute;
+  width: 114px;
+  height: 80vh;
+  left: 2vw;
+  top: -36vh;
+
+  background: #25B3D2;
+  transform: rotate(44.77deg);
+  box-shadow: #25B3D5 0px -26px 14px;
+}
+
+.box {
+  position: relative;
+  width: 60vw;
+  text-align: center
+}
+
+.btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  width: 20vw;
+  height: 5vh;
+  background: #25B3D2;
+  border: none;
+  outline: none;
+  margin: 5px;
+  box-shadow: #25B3D5 0px 0px 12px;
+
+}
+
+button:hover {
+  background: #1c788d;
+  cursor: pointer;
+}
+
+.form>button {
+  width: 98.5%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}
+
+.form>h1 {
+  text-align: center;
+}
+
+.form>input,
+.password,
+.form>button {
+  outline: none;
+  border: none;
+  margin: 5px;
+  height: 5vh;
+}
+
+.password>input {
+  background-color: white;
+  border: none;
+  outline: none;
+}
+
+header {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.hero-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+
+}
+
+.password {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px;
+}
+
+.pass-icon {
+  background-color: white;
+  color: black;
+}
+
+.video {
+  background-color: #0e5261;
+  width: fit-content;
+  padding-bottom: 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.video:hover {
+  background-color: #1a383f;
+  cursor: pointer;
+}
+
+.vids {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.video > h2 {
+  margin: 5px;
+}
+
+@media only screen and (max-width: 700px) {
+  body{
+    width: 100vw;
+  }
+  .box {
+    bottom: 32vh;
+
+  }
+
+  .hero-screen {
+    height: 100vh;
+
+  }
+
+  .video {
+    background-color: #0e5261;
+    width: fit-content;
+    padding-bottom: 10px;
+    margin: 5px;
+    width: 40vw;
+  }
+
+  .img {
+    width: 40vw;
+    height: 20vh;
+  }
+
+  .vids {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
