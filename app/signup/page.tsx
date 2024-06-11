@@ -49,7 +49,7 @@ export default function page() {
         }
     }
     return <main className="form">
-        <h1>Get in our platforme</h1>
+        <h1>Create your account</h1>
         <input type="email" placeholder="email" onChange={(e) => {
             setEmail(e.target.value)
         }} ></input>
