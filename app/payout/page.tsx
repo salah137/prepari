@@ -9,7 +9,7 @@ import { useEffect, useState } from "react"
 import { useRouter } from "next/navigation"
 
 export default function page() {
-"use client"
+    "use client"
 
     const [user, setUser] = useState<any>()
     const db = getFirestore(firebase_app)
@@ -46,14 +46,14 @@ export default function page() {
             <div className="txt">
                 send money to this rib
                 <span className="m-rib">
-                    267 UYUYZY B17 7H1HQ1UH1H8
+                    5810245211017400
                 </span>
                 and now your account wait 24h to be verified
             </div>
             <button onClick={
                 async () => {
                     if (rib) {
-             
+
                         let dd = {
                             payed: false,
                             uuid: user.uuid,
