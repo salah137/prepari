@@ -24,10 +24,10 @@ export default function page() {
                 docs.forEach(
                     (e) => {
                         e.id
-                        let { image, pdf, video } = e.data()
+                        let { image, pdf, video, title } = e.data()
                         ds.push(
                             {
-                                image, pdf, video, title: e.id
+                                image, pdf, video, title
                             }
                         )
                     }
