@@ -27,7 +27,7 @@ export default function page() {
                         let { image, pdf, video, title } = e.data()
                         ds.push(
                             {
-                                image, pdf, video, title
+                                image, pdf, video, title, id : e.id
                             }
                         )
                     }
@@ -56,7 +56,7 @@ export default function page() {
                             }
                         }>
                             <Image className="img" src={e["image"]} width={300} height={300} alt={""}></Image>
-                            <h2>{e["title"]}</h2>
+                            <h2>{e["id"]}</h2>
                         </div>
 
                     }
