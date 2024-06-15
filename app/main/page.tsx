@@ -51,7 +51,7 @@ export default function page() {
                                 if (!user.payed) {
                                     router.push("/payout")
                                 } else {
-                                    router.push(e["iddd"])
+                                    router.push(e["id"])
                                 }
                             }
                         }>
