@@ -48,6 +48,8 @@ export default function page() {
                     (e: any) => {
                         return <div className="video" onClick={
                             () => {
+                                console.log(e.free);
+                                
                                 if (!user.payed && !e.free) {
                                     router.push("/payout")
                                 } else {
@@ -56,7 +58,7 @@ export default function page() {
                             }
                         }>
                             <Image className="img" src={e["image"]} width={500} height={300} alt={""}></Image>
-                            <h2>{e["id"]}</h2>
+                            <h2>{e["title"]}</h2>
                         </div>
 
                     }

@@ -45,7 +45,7 @@ export default function page() {
                     pip={true}
                 />
             </div>
-            <h1>{params.title}</h1>
+            <h1>{vid["title"]}</h1>
             <a target="_blank" href={vid["pdf "]} rel="noopener noreferrer">
             <div className="files">
 
