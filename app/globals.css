@@ -19,7 +19,6 @@ body {
 }
 
 .box {
-  position: relative;
   width: 60vw;
   text-align: center
 }
