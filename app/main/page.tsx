@@ -55,7 +55,7 @@ export default function page() {
                                 }
                             }
                         }>
-                            <Image className="img" src={e["image"]} width={300} height={300} alt={""}></Image>
+                            <Image className="img" src={e["image"]} width={500} height={300} alt={""}></Image>
                             <h2>{e["id"]}</h2>
                         </div>
 
