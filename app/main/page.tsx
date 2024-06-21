@@ -48,7 +48,7 @@ export default function page() {
                     (e: any) => {
                         return <div className="video" onClick={
                             () => {
-                                if (!user.payed) {
+                                if (!user.payed && !e.free) {
                                     router.push("/payout")
                                 } else {
                                     router.push(e["id"])
