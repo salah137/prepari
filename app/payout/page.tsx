@@ -48,7 +48,12 @@ export default function page() {
                 <span className="m-rib">
                     5810245211017400
                 </span>
+                and connect me at 
+                <span className="m-rib">
+                    +212 614107997
+                </span>
                 and now your account wait 24h to be verified
+                
             </div>
             <button onClick={
                 async () => {
