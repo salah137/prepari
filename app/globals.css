@@ -104,7 +104,7 @@ header {
 
 .video {
   background-color: #0e5261;
-  width: fit-content;
+  width: 20vw;
   padding-bottom: 10px;
   margin: 5px;
   border-radius: 5px;
