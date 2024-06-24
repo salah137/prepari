@@ -117,7 +117,7 @@ header {
 
 .vids {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto  ;
 }
 
 .video > h2 {
@@ -155,4 +155,10 @@ header {
     display: grid;
     grid-template-columns: auto auto;
   }
+}
+
+.free{
+  background-color: #25B3D2;
+  color: white;
+  margin: 10px;
 }

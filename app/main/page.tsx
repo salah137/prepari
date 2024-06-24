@@ -59,6 +59,7 @@ export default function page() {
                         }>
                             <Image className="img" src={e["image"]} width={500} height={300} alt={""}></Image>
                             <h2>{e["title"]}</h2>
+                            {e.free && <h1 className="free">free</h1>}
                         </div>
 
                     }
