@@ -67,6 +67,7 @@ button:hover {
   border: none;
   margin: 5px;
   height: 5vh;
+  border-radius: 5px;
 }
 
 .password>input {
