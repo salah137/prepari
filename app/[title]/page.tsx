@@ -8,6 +8,8 @@ import { useParams } from "next/navigation"
 import { getDoc, doc, getFirestore } from "firebase/firestore"
 import firebase_app from "../firebase-config"
 import Link from "next/link"
+import logo from "../assets/logo.png"
+import Image from "next/image"
 
 export default function page() {
     const [isClient, setIsClient] = useState(false)
@@ -33,7 +35,10 @@ export default function page() {
         },[]
     )
 
-    return <main>
+    return <div className="all">
+    <header className="main-header">
+        <Image src={logo} width={200} height={200} alt="logo" />
+    </header><main>
         {isClient && vid ? <div className="watching">
             <div className="vidd">
                 <ReactPlayer
@@ -54,5 +59,5 @@ export default function page() {
             </div></a>
         </div>
             : <></>
-        }</main>
+        }</main></div>
 }
