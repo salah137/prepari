@@ -4,7 +4,10 @@ import { FaLock, FaLockOpen } from "react-icons/fa"
 import firebase_app from "../firebase-config"
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth"
 import { useRouter } from "next/navigation"
-
+import Link from "next/link"
+import writing from "../assets/writing.jpeg"
+import logo from "../assets/logo.png"
+import Image from "next/image"
 export default function page() {
     "use client"
 
@@ -40,9 +43,16 @@ export default function page() {
             setErr("verify your infos")
         }
     }
-    return <main className="form">
-        <h1>Get in our platforme</h1>
-        <input placeholder="email" onChange={(e) => {
+   
+    return <div className="all-auth">
+    <div className="imag">
+        <Image src={writing} alt="image" className="big-img" />
+    </div>
+    <main className="form">
+        <Image src={logo} width={200} height={200} alt="logo" />
+
+        <h1>Créer un compte</h1>
+        <input type="email" placeholder="email" onChange={(e) => {
             setEmail(e.target.value)
         }} ></input>
         <div className="password">
@@ -60,9 +70,10 @@ export default function page() {
                         :
                         <FaLock />
                 }
-            </span></div>
+            </span>
+        </div>
         <button onClick={signIn}>
-            Sign In
+            Login
         </button>
         {
             showErr ? <div style={
@@ -74,5 +85,11 @@ export default function page() {
                 {showErr}
             </div> : <></>
         }
+
+        <h2>
+            you don't have an account <Link href={"/signup"}>Sign Up</Link>
+        </h2>
+
     </main>
+</div>
 }
