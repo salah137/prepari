@@ -23,7 +23,9 @@ export function HeroScreen() {
                 Préparez-vous
             </h2>
             <p> Préparez-vous aux concours des grandes écoles (ENSA, ENSAM, ENAM, médecine...) à un prix avantageux. Pour seulement 200 DH, vous pouvez acquérir les connaissances nécessaires pour réussir le concours avec succès.</p>
-            <div className="--up">start</div>
+            <Link href={"/signup"}><div className="--up">start</div></Link>
+
+
 
             <div className="hero">
                 <Image src={i1} alt="img" className="img" id="i1" />
@@ -42,8 +44,8 @@ export function HeroScreen() {
                 </div>
 
                 <div className="social">
-                    <Image src={insta} alt="insta" className="sc" />
-                    <Image src={face} alt="face" className="sc" />
+                   <a href="https://www.instagram.com/najahsup24/" target="_blank"><Image src={insta} alt="insta" className="sc" /></a> 
+                    <a href="https://www.facebook.com/profile.php?id=61561198843147" target="_blank"><Image src={face} alt="face" className="sc" /></a>
 
                 </div>
             </div>

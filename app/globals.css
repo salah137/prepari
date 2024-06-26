@@ -210,4 +210,15 @@ button:hover{
     .video{
       width: 45vw;
     }
+    .all-auth{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .big-img{
+      width: 100vw;
+      height: 30vh;
+    }
+    
+    
   }
