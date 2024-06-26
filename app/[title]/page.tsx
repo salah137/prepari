@@ -50,7 +50,7 @@ export default function page() {
                 />
             </div>
             <h1>{vid["title"]}</h1>
-            <a target="_blank" href={vid["pdf "]} rel="noopener noreferrer">
+            <a target="_blank" href={vid["pdf"]} rel="noopener noreferrer">
             <div className="files">
 
                 <FaFilePdf />
