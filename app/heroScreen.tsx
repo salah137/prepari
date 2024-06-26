@@ -14,8 +14,8 @@ export function HeroScreen() {
         <header>
             <Image src={logo} width={200} height={200} alt="logo" />
             <div className="buttons">
-               <Link href={"/signup"}><div className="--up">Sign Up</div></Link> 
-               <Link href={"/signin"}> <div className="--in">Sign In</div></Link> 
+                <Link href={"/signup"}><div className="--up">Sign Up</div></Link>
+                <Link href={"/signin"}> <div className="--in">Sign In</div></Link>
             </div>
         </header>
         <main>
@@ -42,8 +42,8 @@ export function HeroScreen() {
                 </div>
 
                 <div className="social">
-                    <Image src={insta} alt="insta" className="sc"/>
-                    <Image src={face} alt="face" className="sc"/>
+                    <Image src={insta} alt="insta" className="sc" />
+                    <Image src={face} alt="face" className="sc" />
 
                 </div>
             </div>
