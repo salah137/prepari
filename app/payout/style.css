@@ -1,5 +1,5 @@
 .payout {
-    background-color: white;
+    background-color: #FFECED;
     height: 100vh;
     width: 100vw;
     color: black;
@@ -21,6 +21,14 @@
     padding: 3px;
     text-align: center;
     border: 1px solid black;
+}
+
+input{
+    border: 2px solid black;
+}
+
+button{
+    border: 2px solid black;
 }
 
 @media only screen and (min-width: 700px) {
