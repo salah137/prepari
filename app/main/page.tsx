@@ -12,62 +12,38 @@ export default function page() {
         payed: true
     })
     const router = useRouter()
-    const [videos, setVideos] = useState<any>([
-        {
-            title: "bababbabababba hshds shdsjhdsjhssh",
-            image: ww,
-            free: true
-        },
-        {
-            title: "bababbabababba hshds shdsjhdsjhssh",
-            image: ww,
-            free: true
-        }, {
-            title: "bababbabababba hshds shdsjhdsjhssh",
-            image: ww,
-            free: true
-        }, {
-            title: "bababbabababba hshds shdsjhdsjhssh",
-            image: ww,
-            free: true
-        }, {
-            title: "bababbabababba hshds shdsjhdsjhssh",
-            image: ww,
-            free: true
-        },
-    ])
+    const [videos, setVideos] = useState<any>([])
 
-    /*
-        useEffect(
-            () => {
-                (async () => {
-                    const db = getFirestore(firebase_app);
-                    const querySnapshot = await getDoc(doc(db, "users", `${localStorage.getItem("uuid")}`));
-                    setUser(querySnapshot.data())
-    
-                    const queryi = query(collection(db, 'video'),)
-                    const docs = await getDocs(queryi)
-                    let ds: ((prevState: never[]) => never[]) | DocumentData[] = []
-                    docs.forEach(
-                        (e) => {
-                            e.id
-                            let { image, pdf, video, title,free } = e.data()
-                            ds.push(
-                                {
-                                    image, pdf, video, title, id : e.id,free
-                                }
-                            )
-                        }
-                    )
-    
-                    setVideos(ds)
-                    console.log(ds);
-    
-    
-                })()
-            }, []
-        )
-    */
+
+    useEffect(
+        () => {
+            (async () => {
+                const db = getFirestore(firebase_app);
+                const querySnapshot = await getDoc(doc(db, "users", `${localStorage.getItem("uuid")}`));
+                setUser(querySnapshot.data())
+
+                const queryi = query(collection(db, 'video'),)
+                const docs = await getDocs(queryi)
+                let ds: ((prevState: never[]) => never[]) | DocumentData[] = []
+                docs.forEach(
+                    (e) => {
+                        e.id
+                        let { image, pdf, video, title, free } = e.data()
+                        ds.push(
+                            {
+                                image, pdf, video, title, id: e.id, free
+                            }
+                        )
+                    }
+                )
+
+                setVideos(ds)
+                console.log(ds);
+
+
+            })()
+        }, []
+    )
     return <div className="all">
         <header className="main-header">
             <Image src={logo} width={200} height={200} alt="logo" />
