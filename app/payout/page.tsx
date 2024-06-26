@@ -7,6 +7,7 @@ import firebase_app from "../firebase-config"
 import { collection, doc, getDoc, getFirestore, setDoc, deleteDoc } from "firebase/firestore"
 import { useEffect, useState } from "react"
 import { useRouter } from "next/navigation"
+import logo from "../assets/logo.png"
 
 export default function page() {
     "use client"
@@ -28,7 +29,10 @@ export default function page() {
             })()
         }, []
     )
-    return <main className="payout">
+    return  <div className="all">
+    <header className="main-header">
+        <Image src={logo} width={200} height={200} alt="logo" />
+    </header><main className="payout">
         <div className="cih">
             <Image src={cih} alt="cih" width={300} height={150} />
             <h1>use CIH to pay</h1>
@@ -74,5 +78,5 @@ export default function page() {
             }>Done</button>
 
         </div>
-    </main>
+    </main></div>
 }
