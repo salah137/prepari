@@ -7,7 +7,6 @@ import "./style.css"
 import { useParams } from "next/navigation"
 import { getDoc, doc, getFirestore } from "firebase/firestore"
 import firebase_app from "../firebase-config"
-import Link from "next/link"
 import logo from "../assets/logo.png"
 import Image from "next/image"
 
