@@ -50,12 +50,14 @@ export default function page() {
                 />
             </div>
             <h1>{vid["title"]}</h1>
-            <a target="_blank" href={vid["pdf"]} rel="noopener noreferrer">
-            <div className="files">
-
-                <FaFilePdf />
-                <h3>Check our docs</h3>
-            </div></a>
+            {
+               vid["pdf"] &&            <a target="_blank" href={vid["pdf"]} rel="noopener noreferrer">
+                            <div className="files">
+                
+                                <FaFilePdf />
+                                <h3>Check our docs</h3>
+                            </div></a>
+            }
         </div>
             : <></>
         }</main></div>
