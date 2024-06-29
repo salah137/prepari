@@ -51,7 +51,7 @@ export default function page() {
     <main className="form">
         <Image src={logo} width={200} height={200} alt="logo" />
 
-        <h1>Créer un compte</h1>
+        <h1>accéder à votre compte</h1>
         <input type="email" placeholder="email" onChange={(e) => {
             setEmail(e.target.value)
         }} ></input>
