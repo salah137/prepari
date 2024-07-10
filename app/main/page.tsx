@@ -23,7 +23,7 @@ export default function page() {
                 const querySnapshot = await getDoc(doc(db, "users", `${localStorage.getItem("uuid")}`));
                 setUser(querySnapshot.data())
 
-                const queryi = query(collection(db, 'video'),orderBy('timestampField', 'desc'))
+                const queryi = query(collection(db, 'video'),orderBy('timestampField'))
                 const docs = await getDocs(queryi)
                 let ds: ((prevState: never[]) => never[]) | DocumentData[] = []
                 docs.forEach(
