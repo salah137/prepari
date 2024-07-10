@@ -6,6 +6,7 @@ import firebase_app from "../firebase-config"
 import { useRouter } from "next/navigation"
 import ww from "../assets/writing.jpeg"
 import logo from "../assets/logo.png"
+import { orderBy } from "firebase/firestore"
 
 export default function page() {
     const [user, setUser] = useState<any>({
@@ -22,7 +23,7 @@ export default function page() {
                 const querySnapshot = await getDoc(doc(db, "users", `${localStorage.getItem("uuid")}`));
                 setUser(querySnapshot.data())
 
-                const queryi = query(collection(db, 'video'),)
+                const queryi = query(collection(db, 'video'),orderBy('timestampField', 'desc'))
                 const docs = await getDocs(queryi)
                 let ds: ((prevState: never[]) => never[]) | DocumentData[] = []
                 docs.forEach(
